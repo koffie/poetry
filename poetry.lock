@@ -955,14 +955,18 @@ testing = ["pytest", "pytest-benchmark"]
 
 [[package]]
 name = "poetry-core"
-version = "1.6.1"
+version = "1.7.0.dev0"
 description = "Poetry PEP 517 Build Backend"
 optional = false
-python-versions = ">=3.7,<4.0"
-files = [
-    {file = "poetry_core-1.6.1-py3-none-any.whl", hash = "sha256:70707340447dee0e7f334f9495ae652481c67b32d8d218f296a376ac2ed73573"},
-    {file = "poetry_core-1.6.1.tar.gz", hash = "sha256:0f9b0de39665f36d6594657e7d57b6f463cc10f30c28e6d1c3b9ff54c26c9ac3"},
-]
+python-versions = "^3.8"
+files = []
+develop = false
+
+[package.source]
+type = "git"
+url = "https://github.com/python-poetry/poetry-core.git"
+reference = "f2cad313abde401012e259acd42e4a455a431718"
+resolved_reference = "f2cad313abde401012e259acd42e4a455a431718"
 
 [[package]]
 name = "poetry-plugin-export"
@@ -1662,4 +1666,4 @@ testing = ["big-O", "flake8 (<5)", "jaraco.functools", "jaraco.itertools", "more
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.8"
-content-hash = "92d6cd808867382b92c7e760437501ed12f1ba5857bfcdd5f23693c6d2ee6411"
+content-hash = "7358e58f6635a47e6f08a3ed9f47cdb447976ab052a1d0ebdd52ffafa42c8326"
